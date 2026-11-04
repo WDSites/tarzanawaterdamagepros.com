@@ -235,7 +235,7 @@ main h2 + p,main h3 + p{margin-top:14px}
 
 /* Footer */
 .site-footer{background:var(--slate-900);color:var(--on-dark-muted);padding:54px 0 36px;font-size:14.5px}
-.site-footer .wrap{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:32px}
+.site-footer .wrap{display:grid;grid-template-columns:1.5fr 1fr 1.25fr 1fr 1fr;gap:32px}
 .site-footer h3{color:var(--white);font-size:16px;margin-bottom:12px}
 .site-footer a{color:var(--on-dark);text-decoration:none;display:block;margin-bottom:8px}
 .site-footer a:hover{color:var(--coral-soft);text-decoration:underline}
@@ -311,3 +311,22 @@ main h2 + p,main h3 + p{margin-top:14px}
 .card.has-img h3{margin-top:18px}
 .card.has-img p:last-child{padding-bottom:22px}
 .card-img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:var(--slate-200)}
+
+.svcgroups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.svcgroup{background:var(--white);border:1px solid var(--slate-200);border-radius:var(--radius);padding:22px}
+.svcgroup h3{font-size:18px;margin-bottom:10px}
+.svcgroup ul{list-style:none;margin:0;padding:0}
+.svcgroup li{padding:10px 0;border-top:1px solid var(--slate-200);display:flex;flex-direction:column;gap:2px}
+.svcgroup li:first-child{border-top:0}
+.svcgroup li a{font-weight:700}
+.svcgroup li span{font-size:14.5px;color:var(--muted)}
+.findcause{display:grid;gap:14px}
+.findrow{display:grid;grid-template-columns:190px minmax(0,1fr);gap:14px;align-items:start}
+.findrow h3{font-size:15px;margin:8px 0 0;color:var(--slate-600);text-transform:uppercase;letter-spacing:.06em}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{display:inline-block;padding:8px 14px;border:1px solid var(--slate-200);border-radius:999px;background:var(--white);font-size:14.5px;font-weight:600;text-decoration:none;color:var(--ink)}
+.chip:hover{border-color:var(--coral-btn);color:var(--coral-btn)}
+.foot-more a{font-size:14px}
+@media (max-width:900px){.svcgroups{grid-template-columns:minmax(0,1fr)}.findrow{grid-template-columns:minmax(0,1fr)}}
+
+.prose p,.prose li,.prose td{overflow-wrap:anywhere}
